@@ -184,9 +184,13 @@ p {
         text-align: center;
     }
     .cards img{
-        width: 50vw;
-        height: 50vw;
+        width: 66vw;
+        height: 66vw;
         transition: all 0.5s;
+    }
+    .cards img:hover{
+        width: 75vw;
+        height: 75vw;
     }
     #espacioReserva{
         margin-top: 110px;
