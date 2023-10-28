@@ -100,19 +100,22 @@ function reservarDestino() {
             </label>
             <label for="lastname">&nbsp;&nbsp;&nbsp;Apellido:
                 <input type="text" size="20" name="lastname" placeholder="Ingrese su apellido aquí..." required>
-            </label>                                           
+            </label>
+            <br>
             <label for="city">Destino:
                 <input type="text" size="32" name="city" placeholder="Ingrese la ciudad de destino">
             </label>
             <label for="night">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noches:
                 <input type="number" size="10" name="host">
             </label>
+            <br>
             <label for="email">Correo electrónico:
                 <input type="email" name="email" size="24" placeholder="Ingrese su correo electrónico" required>
             </label>
             <label for="phone">&nbsp;&nbsp;&nbsp;Teléfono:
                 <input type="tel" size="15" name="phone" maxlength="13" placeholder="Ingrese su teléfono">
             </label>
+            <br>
             <label for="date">Fecha de viaje:
                 <input type="date" name="fly">
             </label>    
@@ -120,6 +123,7 @@ function reservarDestino() {
                 <input type="radio" name="gender" value="hombre" checked="">Hombre
                 <input type="radio" name="gender" value="mujer">Mujer
             </label>
+            <br>
             <label for="price">Precio total:
                 <input type="number" value="=esp.value">
             </label>                      
