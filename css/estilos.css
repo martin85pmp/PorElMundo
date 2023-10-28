@@ -23,8 +23,7 @@ header{
 }
 
 .presentacion{
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .nombre-agencia{
@@ -346,8 +345,9 @@ section{
 }
 
 #reserva{
-    width: 720px;
+    width: 100%;
 }
+
 
 #registro {
     background-color: aliceblue;
