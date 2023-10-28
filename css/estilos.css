@@ -157,6 +157,9 @@ p {
         position: fixed;
         width: 100%;
     }
+   .presentacion{
+        margin-top: 120px;
+    }
     .item-nav{
         min-width: 90px;
         padding: 0px;
