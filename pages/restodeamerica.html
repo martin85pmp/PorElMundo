@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Resto de América</title>
+    <link rel="icon" href="../assets/img/viajar.ico">
+    <script src="/Js/script.js"></script>
+</head>
+
+<body>        <!--esto es un comentario-->   
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="../logo.png" alt="Logo de la compania"></a>
+            
+            <h2>Por el Mundo</h2>
+        </div>
+    
+        <nav class="nav-container"><!--VA A VER QUE CREAR CADA PAGINA PARA CADA DESTNO-->
+            <a class="item-nav" href="../index.html">Inicio</a>
+            <a class="item-nav" href="../pages/asia.html">Asia</a>
+            <a class="item-nav" href="../pages/oceania.html">Oceania</a>
+            <a class="item-nav" href="../pages/europa.html">Europa</a>
+            <a class="item-nav" href="#tickets">Comprar Tickets</a><!--NO HAY QUE CREAR UNA PAGINA PARA TICKETS, POR EL MOMENTO-->
+        </nav>
+    </header>
+
+    <div id="espacioReserva"></div>
+
+    <main>
+        <div class="titulo">
+            <h2>Viajá por Europa</h2>
+            <h3>Volvé al pasado y descubrí las ciudades que hicieron historia</h3>
+        </div>
+
+        <section>
+            <div class="padre">
+                <div class="card">
+                    <img class="paises" src="../assets/img/España.jpg" alt="Imagen de Brazil">
+                    <h3 class="lugar">Brazil</h3>
+                    <p class="estadia">13 días/12 noches</p>
+                    <p class="oferta">desde <span class="precio">$658.395</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/Francia.jpg" alt="Imagen de Francia">
+                    <h3 class="lugar">Francia</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$594.902</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/Portugal.jpg" alt="Imagen de Portugal">
+                    <h3 class="lugar">Portugal</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$673.960</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/Italia.jpg" alt="Imagen de Italia">
+                    <h3 class="lugar">Italia</h3>
+                    <p class="estadia">11 días/10 noches</p>
+                    <p class="oferta">desde <span class="precio">$828.726</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+
+                <div class="card">
+                    <img class="paises" src="../assets/img/Alemania.jpg" alt="Imagen de Alemania">
+                    <h3 class="lugar">Alemania</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$889.478</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+
+                <div class="card">
+                    <img class="paises" src="../assets/img/Gran Bretaña.jpg" alt="Imagen de Gran Bretaña">
+                    <h3 class="lugar">Gran Bretaña</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$951.927</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="titulo">
+            <h2>Super Ofertas por tiempo limitado</h2>
+        </div>
+        <div id="watch">
+            <script src="../Js/script.js"></script>
+        </div>
+        
+        <section>
+            <div class="padre">
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Barcelona.jpg" alt="Imagen de Barcelona">
+                    <h3>Barcelona</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>6 días/5 noches</p>
+                    <p>desde <span class="precio">$904.575</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Ibiza.jpg" alt="Imagen de Ibiza">
+                    <h3>Ibiza</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>6 días/5 noches</p>
+                    <p>desde <span class="precio">$883.178</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Madrid.jpg" alt="Imagen de Madrid">
+                    <h3>Madrid</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>10 días/9 noches</p>
+                    <p>desde <span class="precio">$883.178</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Berlin_.jpg" alt="Imagen de Berlin">
+                    <h3>Berlin</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>9 días/8 noches</p>
+                    <p>desde <span class="precio">$1.092.203</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Paris.jpg" alt="Imagen de Paris">
+                    <h3>Paris</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>10 días/9 noches</p>
+                    <p>desde <span class="precio">$592.008</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Roma.jpg" alt="Imagen de Roma">
+                    <h3>Roma</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>11 días/10 noches</p>
+                    <p>desde <span class="precio">$863.200</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">  
+            <div class="footer-menu">    
+                <a href="/pages/contacto.html">Contáctenos</a>
+            </div>
+
+            <div class="footer-menu">
+                <a  href="">Promociones</a>
+            </div>
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="../assets/img/instagram.png" alt="Visita nuestro instagram" style="width:90px;">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="../assets/img/facebook.png" alt="Visita nuestro facebook" style="width:50px">
+                </a>
+            </div>
+        </div>
+        <p class="text-center">COPYRIGHT TODOS LOS DERECHOS RESERVADOS.</p>
+
+    </footer>
+
+</body>
+
+</html>

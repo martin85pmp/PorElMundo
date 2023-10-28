@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Oceania</title>
+    <link rel="icon" href="../assets/img/viajar.ico">
+    <script src="/Js/script.js"></script>
+</head>
+
+<body>        <!--esto es un comentario-->   
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="../logo.png" alt="Logo de la compania"></a>
+            
+            <h2>Por el Mundo</h2>
+        </div>
+    
+        <nav class="nav-container"><!--VA A VER QUE CREAR CADA PAGINA PARA CADA DESTNO-->
+            <a class="item-nav" href="../index.html">Inicio</a>
+            <a class="item-nav" href="../pages/asia.html">Asia</a>
+            <a class="item-nav" href="../pages/europa.html">Europa</a>
+            <a class="item-nav" href="../pages/restodeamerica.html">Resto de America</a>
+            <a class="item-nav" href="#tickets">Comprar Tickets</a><!--NO HAY QUE CREAR UNA PAGINA PARA TICKETS, POR EL MOMENTO-->
+        </nav>
+    </header>
+
+    <div id="espacioReserva"></div>
+
+    <main>
+        <div class="titulo">
+            <h2>Viajá por Oceanía</h2>
+            <h3>Descubrí destinos maravillosos y paradisíacos</h3>
+        </div>
+
+        <section>
+            <div class="padre">
+                <div class="card">
+                    <img class="paises" src="../assets/img/Australia.jpg" alt="Imagen de Australia">
+                    <h3 class="lugar">Australia</h3>
+                    <p class="estadia">8 días/7 noches</p>
+                    <p class="oferta">desde <span class="precio">$921.595</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/NuevaZelanda.jpg" alt="Imagen de Nueva Zelanda">
+                    <h3 class="lugar">Nueva Zelanda</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$887.510</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/Samoa.jpeg" alt="Imagen de Samoa">
+                    <h3 class="lugar">Islas de Samoa</h3>
+                    <p class="estadia">7 días/6 noches</p>
+                    <p class="oferta">desde <span class="precio">$950.360</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/Fiji.jpg" alt="Imagen de Fiji">
+                    <h3 class="lugar">Islas Fiji</h3>
+                    <p class="estadia">10 días/9 noches</p>
+                    <p class="oferta">desde <span class="precio">$1.116.802</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="card">
+                    <img class="paises" src="../assets/img/PapuaNuevaguinea.jpg" alt="Imagen de Papua Nueva Guinea">
+                    <h3 class="lugar">Nueva Guinea</h3>
+                    <p class="estadia">7 días/6 noches</p>
+                    <p class="oferta">desde <span class="precio">$920.980</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="card">
+                    <img class="paises" src="../assets/img/IslasSalomon.jpg" alt="Imagen de Gran Bretaña">
+                    <h3 class="lugar">Islas Salomón</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$872.930</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="titulo">
+            <h2>Super Ofertas por tiempo limitado</h2>
+        </div>
+        <div id="watch">
+            <script src="../Js/script.js"></script>
+        </div>
+        
+        <section>
+            <div class="padre">
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/BoraBora.jpeg" alt="Imagen de Bora Bora">
+                    <h3>Bora Bora</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>5 días/4 noches</p>
+                    <p>desde <span class="precio">$708.500</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/LagoPukaki.jpeg" alt="Imagen del Lago Pukaki Sur">
+                    <h3>Lago Pukaki Sur</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>6 días/5 noches</p>
+                    <p>desde <span class="precio">$843.800</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/MonteUluru.jpg" alt="Imagen del Monte Uluru">
+                    <h3>Monte Uluru</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>10 días/9 noches</p>
+                    <p>desde <span class="precio">$987.360</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/gran-barrera-de-coral.jpg" alt="Imagen de la Gran Barrera de coral">
+                    <h3>Gran Barrera de coral</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>5 días/4 noches</p>
+                    <p>desde <span class="precio">$698.220</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/BosqueDaintree.jpg" alt="Imagen del Bosque tropical del Río Daintree Australia">
+                    <h3>Bosque Daintree</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>6 días/5 noches</p>
+                    <p>desde <span class="precio">$649.308</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/VolcanTongariro.jpg" alt="Imagen de Volcán Tongariro">
+                    <h3>Volcán Tongariro</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>7 días/5 noches</p>
+                    <p>desde <span class="precio">$728.800</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">  
+            <div class="footer-menu">    
+                <a href="/pages/contacto.html">Contáctenos</a>
+            </div>
+
+            <div class="footer-menu">
+                <a  href="">Promociones</a>
+            </div>
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="../assets/img/instagram.png" alt="Visita nuestro instagram" style="width:90px;">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="../assets/img/facebook.png" alt="Visita nuestro facebook" style="width:50px">
+                </a>
+            </div>
+        </div>
+        <p class="text-center">COPYRIGHT TODOS LOS DERECHOS RESERVADOS.</p>
+
+    </footer>
+
+</body>
+
+</html>

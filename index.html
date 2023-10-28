@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Por el Mundo</title>
+    <link rel="icon" href="/assets/img/viajar.ico">
+    <script src="/Js/script.js"></script>
+</head>
+
+<body> <!--esto es un comentario-->
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="/logo.png" alt="Logo de la compañía"></a>
+            <h2>Por el Mundo</h2>
+        </div>
+
+        <nav class="nav-container"><!--VA A VER QUE CREAR CADA PAGINA PARA CADA DESTNO-->
+            <a class="item-nav" href="/pages/europa.html">Europa</a>                     
+            <a class="item-nav" href="/pages/Asia.html">Asia</a>
+            <a class="item-nav" href="/pages/oceania.html">Oceania</a>
+            <a class="item-nav" href="#tickets">Comprar Tickets</a><!--NO HAY QUE CREAR UNA PAGINA PARA TICKETS, POR EL MOMENTO-->
+        </nav>
+    </header>
+
+    <main>
+    <div class="presentacion">
+        <h2>¿QUÉ ES <span class="nombre-agencia">POR EL MUNDO</span>? <h2>
+                <p>Somos mucho más que una agencia de viajes; somos tus cómplices en la aventura de descubrir el mundo.
+                    Nuestra pasión es convertir tus sueños de viaje en realidades inolvidables. Con años de experiencia
+                    y un equipo de expertos apasionados por explorar cada rincón del planeta, estamos aquí para diseñar
+                    experiencias únicas que te llevarán a destinos sorprendentes, culturas fascinantes y paisajes
+                    impresionantes. Ya sea que desees relajarte en playas paradisíacas, sumergirte en la historia de
+                    antiguas civilizaciones o explorar las maravillas naturales del mundo, estamos comprometidos a hacer
+                    de cada viaje una experiencia única y memorable. ¡Únete a nosotros en esta emocionante travesía y
+                    descubre lo que "Por el Mundo" tiene preparado para ti!</p>
+                <button class="btn-tickets">Comprar Tickets</button>
+    </div>
+
+    <section id="tickets">
+        <h2> ¡VAMOS! ANÍMATE A VIAJAR A TRAVÉS DE <br> <span class="nombre-agencia">POR EL MUNDO</span></h2>
+        <h3>Ven a conocer el mundo con nosotros. Te brindaremos todas las facilidades de pago a los mejores precios
+        </h3>
+        <form>
+            <div><!--ACA FALTARIA UNA BASE DE DATOS, VEREMOS-->
+                <input type="text" placeholder="Ciudad de Origen" required>
+                <input type="text" placeholder="Ciuadad de Destino" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Hotel" required>
+                <input type="number" placeholder="Cantidad de habitaciones" required>
+            </div>
+            <p>Recuerda corroborar todo antes de enviar.</p>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+
+    <div class="destinos">
+        <div class="cards">
+            <a href="/pages/Asia.html">
+                <img class="imagen" src="/assets/img/asia.jpg" alt="imagen de Asia">
+                <h3>Asia</h3>
+            </a>
+        </div>
+
+
+        <div class="cards">
+            <a href="/pages/europa.html">
+                <img class="imagen" src="/assets/img/europa.jpg" alt="Imagen de Europa">
+                <h3>Europa</h3>
+            </a>
+        </div>
+
+        <div class="cards">
+            <a href="/pages/oceania.html">
+                <img class="imagen" src="/assets/img/oceania.jpg" alt="imagen Oceania">
+                <h3>Oceania</h3>
+            </a>
+        </div>
+
+        <div class="cards">
+            <a href="/pages/restodeamerica.html">
+                <img class="imagen" src="/assets/img/restodeamerica.jpg" alt="imagen de Resto de America">
+                <h3>Resto de América</h3>
+            </a>
+        </div>
+    </div>
+
+    <section class="experiencia">
+        <h2> Cuéntanos tu experiencia con <span class="nombre-agencia">Por el mundo</span></h2>
+        <h3>Comparte tu experiencia de viaje con nosotros y ayudanos a mejorar</h3>
+        <form>
+            <div>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido" required>
+            </div>
+            <br>
+            <div>
+                <textarea name="" id="" cols="46" rows="6" placeholder="¿Sobre que quieres hablar?" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    
+    <div>
+        <iframe src="/pages/conversor.html" frameborder="0"></iframe>
+    </div>
+    </main>
+    
+
+
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div class="footer-menu">
+                <a href="/pages/contacto.html">Contáctenos</a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="">Promociones</a>
+            </div>
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="/assets/img/instagram.png" alt="Visita nuestro instagram" style="width:90px;">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="/assets/img/facebook.png" alt="Visita nuestro facebook" style="width:50px">
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="text-center">
+            <p>COPYRIGHT TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

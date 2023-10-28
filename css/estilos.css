@@ -1,0 +1,447 @@
+html{
+    width: 100%;
+}
+
+body {
+    background-color: beige;
+    margin:0;
+    font-family: 'Montserrat', sans-serif,'Nanum Gothic', sans-serif;
+    /*width: 100%;*/
+    height: 100vh;
+    display: grid;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    height: auto;
+    background-color: rgb(156, 53, 53);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.presentacion{
+    text-align: center;
+    
+}
+
+.nombre-agencia{
+    font-size: larger;
+    color: brown;
+    background-color: rgba(233, 156, 13, 0.147);
+    
+}
+.btn-tickets {
+    padding: 15px 150px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color:brown;
+    border: rgb(205, 157, 157) 5px solid;
+    border-radius: 35px;
+}
+.btn-tickets:hover{
+    border-color:#ffca90;
+    cursor: pointer;
+}
+
+iframe{
+    width: 550px;
+    height: 550px;
+}
+/* main, footer{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+
+} */
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: aliceblue;
+}
+
+nav a:hover{  
+    color: aqua;    /* va hacer que al pasar el curso cambie de color */
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 5px;
+    
+}
+.item-nav{
+    flex: 0 1 15%;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.item-nav:hover{
+    flex: 1 1 25%;
+    background-color: rgba(195, 92, 92, 0.3);
+}
+
+.imagen{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0,auto;
+}
+
+.container, iframe, #tickets, .presentacion, .destinos, .experiencia {
+    padding: 20px;
+}
+label {
+    color: #B4886B;
+    font-weight: bold;
+    display: block;
+}
+#myForm {
+    font-size: 20px;
+    padding: 20px;
+}
+
+p {
+    font-size: large;
+}
+
+.destinos {
+    /*width: 100%;*/
+    display:flex;
+    
+}
+.cards {
+    width: 25%;
+    text-align: center;
+}
+.cards img{
+    width: 18vw;
+    height: 18vw;
+    transition: all 0.5s;
+}
+.cards img:hover{
+    width: 25vw;
+    height: 25vw;
+}
+
+
+@media only screen and (max-width:720px) {   /* para celular */
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+    }
+    .item-nav{
+        min-width: 90px;
+        padding: 0px;
+    }
+    .logo{
+        padding: 0px;
+        margin: 0px;
+    }
+    .nav-container{
+        padding: 0px;
+        height: auto;
+        gap: 10px;
+    }
+    .moneda input{
+        width: 200px;
+    }
+    .destinos{
+        flex-wrap: wrap;
+    }
+    .cards {
+        width: 100%;
+        text-align: center;
+    }
+    .cards img{
+        width: 50vw;
+        height: 50vw;
+        transition: all 0.5s;
+    }
+    #espacioReserva{
+        margin-top: 110px;
+        width: 710px;
+    }
+    #reserva{
+        width: 710px;
+    }
+}
+
+@media (min-width:720px) and (max-width:1024px){   /* para Tablet */
+    .destinos {
+        display:flex;
+        flex-wrap: wrap;       
+    }
+    .cards {
+        width: 50%;
+        text-align: center;
+        
+    }
+    .cards img{
+        width: 25vw;
+        height: 25vw;
+        transition: all 0.5s;
+    }
+}
+
+
+/**SECCION PARA DESTINOS*/
+
+.titulo{
+    margin: auto;
+    text-align: center;
+}
+
+#titulo:hover{
+    font-weight: bolder;
+    font-size: large;
+}
+
+section{
+    margin: auto;
+    width: 95%;
+}
+
+.padre{        /*Contenedor padre*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*#watch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    color: brown;
+    font-family: monospace;
+    font-size: 1.7rem;
+}*/
+
+.card{          /*tarjetas*/
+    background-color: aliceblue;
+    width: 480px;
+    height: 252px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.paises{        /*Las imágenes*/
+    object-fit: cover;
+    margin: 0, auto;
+    height: 200px;
+    width: 480px;
+}
+
+.lugar{         /*El título h3*/
+    padding: 0px;
+    margin: 1px;
+    display: inline-block;
+}
+
+.estadia{       /*párrafo de estadía*/
+    display: inline;
+    margin: 1px;
+    font-size:small;
+    font-weight: bolder;
+    margin-left: 220px;
+    right: 0px;
+    bottom: 25px;
+}
+
+.oferta{        /*párrafo del precio*/
+    display: inline-block;
+    padding: 0px;
+    margin: -1px;
+    padding-left: 5px;
+    margin-right: 180px;
+}
+
+.precio{        /*span con el precio*/
+    font-weight: bolder;
+}
+
+.reser1{           /*el botón*/
+    right: 5px;
+    text-align: right;
+}
+
+.tarjeta{
+    background-color: aliceblue;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.tarjeta > h3 {
+    padding: 0px;
+    margin: 3px;
+    text-align: center;
+}
+
+.tarjeta > p{       /**/
+    padding: 0px;
+    text-align: center;
+    padding: 0px;
+    margin: 3px;
+    font-size:small;
+    font-weight: bolder;
+}
+
+.ciudades{          /*imágenes*/
+    object-fit: cover;
+    margin: 0, auto;
+    height: 100px;
+    width: 220px;    
+}
+
+.reser2{
+    width: 50%;
+    margin-top: 3px;
+}
+
+
+/*FORMULARIO DE RESERVA*/
+#espacioReserva{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#reserva{
+    width: 720px;
+}
+
+#registro {
+    background-color: aliceblue;
+    padding-top: 10px;
+    border: solid 1px;
+    width: 100%;
+}
+
+.reser2{
+    width: 50%;
+    margin-top: 3px;
+}
+
+label{
+    display: inline-flex;
+    padding-bottom: 10px;
+}
+
+/* Footer */
+
+.site-footer{
+    background-color:  rgb(156, 53, 53); 
+    margin-top: 1rem;
+    padding-top: 1rem;
+    /*padding-left: 5rem;*/
+    height: auto;
+}
+
+
+.grid-footer{
+    display: grid;
+    height: 56px;
+    grid-template-columns: repeat(2, 0.3fr);
+    grid-template-rows: repeat(2, 50%);
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.footer-menu a{
+    color: aliceblue;
+}
+.text-center{
+    text-align: center;
+    margin-top: 2rem;
+    color: aliceblue;
+}
+
+/* Conversor de moneda */
+.currency-converter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 550px;
+    width: 550px;
+    background-color: #ffca90;
+  
+}
+.moneda{
+    padding: 30px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.moneda select{
+    padding: 10px 15px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+}
+.moneda input {
+    border: 0;
+    font-size: 25px;
+    text-align: right;
+}
+.conversor-imagen{
+    width: 130px;
+    padding-top: 20px;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+.tasa-cambio-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio{
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
