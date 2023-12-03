@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Europa</title>
+    <link rel="icon" href="static/viajar.ico">
+    <script src="static/sctipt.js"></script>
+</head>
+
+<body>        <!--esto es un comentario-->   
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="static/logo.png" alt="Logo de la compania"></a>
+            
+            <h2>Por el Mundo</h2>
+        </div>
+    
+        <nav class="nav-container"><!--VA A VER QUE CREAR CADA PAGINA PARA CADA DESTNO-->
+            <a class="item-nav" href="../index.html">Inicio</a>
+            <a class="item-nav" href="templates/asia.html">Asia</a>
+            <a class="item-nav" href="templates/oceania.html">Oceania</a>            
+            <a class="item-nav" href="#tickets">Comprar Tickets</a><!--NO HAY QUE CREAR UNA PAGINA PARA TICKETS, POR EL MOMENTO-->
+        </nav>
+    </header>
+
+        <main>
+            <div class="container">
+                <h1>Reserva</h1>
+                <p>Estos son los datos de su reserva. Por favor, verifíquelos bien. Si desea, puede editarlos o eliminar la reserva.</p>
+                <table class="table table-light">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Correo</th>
+                            <th>Teléfono</th>
+                            <th>Género</th>
+                            <th>Ciudad de destino</th>
+                            <th>Cantidad de noches</th>
+                            <th>Fecha de viaje</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for reserva in reservas %}
+                        <tr>
+                            <td>{{reserva[0]}}</td>
+                            <td>{{reserva[1]}}</td>
+                            <td>{{reserva[2]}}</td>
+                            <td>{{reserva[3]}}</td>
+                            <td>{{reserva[4]}}</td>
+                            <td>{{reserva[5]}}</td>
+                            <td>{{reserva[6]}}</td>
+                            <td>{{reserva[7]}}</td>
+                            <td>{{reserva[8]}}</td>
+                            <td>{{reserva[9]}}</td>
+
+                            <td>
+                                <a class="btn btn-warning" href="/edit/{{reserva[0]}}">Editar</a> |
+                                <a class="btn btn-danger" onclick="return confirm('¿Desea borrar la reserva?')" href="/destroy/{{reserva[0]}}">Eliminar</a>
+                            </td>
+                                
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+               
+                
+                
+            </div>
+    
+     
+        </main>
+    <script src="/Js/script.js"></script>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">  
+            <div class="footer-menu">    
+                <a href="templates/contacto.html">Contáctenos</a>
+            </div>
+
+            <div class="footer-menu">
+                <a  href="">Promociones</a>
+            </div>
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="static/instagram.png" alt="Visita nuestro instagram" style="width:90px;">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="static/facebook.png" alt="Visita nuestro facebook" style="width:50px">
+                </a>
+            </div>
+        </div>
+        <p class="text-center">COPYRIGHT TODOS LOS DERECHOS RESERVADOS.</p>
+
+    </footer>
+
+</body>
+
+</html>

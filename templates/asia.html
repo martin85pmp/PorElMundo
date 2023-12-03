@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Europa</title>
+    <link rel="icon" href="static/viajar.ico">
+    <script src="static/sctipt.js"></script>
+</head>
+
+<body>        <!--esto es un comentario-->   
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="static/logo.png" alt="Logo de la compania"></a>
+            
+            <h2>Por el Mundo</h2>
+        </div>
+    
+        <nav class="nav-container"><!--VA A VER QUE CREAR CADA PAGINA PARA CADA DESTNO-->
+            <a class="item-nav" href="../index.html">Inicio</a>
+            <a class="item-nav" href="templates/asia.html">Asia</a>
+            <a class="item-nav" href="templates/oceania.html">Oceania</a>            
+            <a class="item-nav" href="#tickets">Comprar Tickets</a><!--NO HAY QUE CREAR UNA PAGINA PARA TICKETS, POR EL MOMENTO-->
+        </nav>
+    </header>
+
+    <div id="espacioReserva"></div>
+
+    <main>
+        <div class="titulo">
+            <h2>Viajá por Asia</h2>
+            <h3>Volvé al pasado y descubrí las ciudades que hicieron historia, nuevos estilo de vida.
+                <br> ASIA es el continente con la mayor diversidad de razas, culturas y lenguas</h3>
+        </div>
+
+        <section>
+            <div class="padre">
+                <div class="card">
+                    <img class="paises" src="../assets/img/muralla-china-907249.jpg" alt="Imagen de Muralla China">
+                    <h3 class="lugar">China</h3>
+                    <p class="estadia">13 días/12 noches</p>
+                    <p class="oferta">desde <span class="precio">$1.358.395</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/Monumento.jpg" alt="Imagen de Indonesia">
+                    <h3 class="lugar">Indonesia</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$594.902</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/Rusia.jpg" alt="Imagen de Rusia">
+                    <h3 class="lugar">Rusia</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$673.960</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+        
+                <div class="card">
+                    <img class="paises" src="../assets/img/playas-tailandia.jpg" alt="Imagen de Tailandia">
+                    <h3 class="lugar">Tailandia</h3>
+                    <p class="estadia">11 días/10 noches</p>
+                    <p class="oferta">desde <span class="precio">$1.128.432</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+
+                <div class="card">
+                    <img class="paises" src="../assets/img/qatar.jfif" alt="Imagen de Qatar">
+                    <h3 class="lugar">Qatar</h3>
+                    <p class="estadia">6 días/5 noches</p>
+                    <p class="oferta">desde <span class="precio">$1.276.480</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+
+                <div class="card">
+                    <img class="paises" src="../assets/img/EmiratosArabes.jpg" alt="Imagen de Emiratos Arabes">
+                    <h3 class="lugar">Emiratos Arabes</h3>
+                    <p class="estadia">7 días/6 noches</p>
+                    <p class="oferta">desde <span class="precio">$1.410.390</span></p>
+                    <button class="reser1" onclick="reservarDestino()" type="button">RESERVAR</button></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="titulo">
+            <h2>Super Ofertas por tiempo limitado</h2>
+        </div>
+        <div id="watch">
+            <script src="../Js/script.js"></script>
+        </div>
+        
+        <section>
+            <div class="padre">
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/LagoBaikal.jpg" alt="Imagen del Lago Baikal">
+                    <h3>Lago Baikal</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>6 días/5 noches</p>
+                    <p>desde <span class="precio">$904.575</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/La India.jpg" alt="Imagen de India">
+                    <h3>Taj Mahal</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>6 días/5 noches</p>
+                    <p>desde <span class="precio">$904.575</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/GLOBOS bagan.jpg" alt="Bagan. Myanmar">
+                    <h3>Bagan</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>6 días/5 noches</p>
+                    <p>desde <span class="precio">$883.178</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+        
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/VIETNAM bahia-halong .jpg" alt="Imagen de Bahía de Halong. Vietnam">
+                    <h3>Bahia Halong</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>10 días/9 noches</p>
+                    <p>desde <span class="precio">$998.624</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Estambul.jpg" alt="Imagen de Estambul">
+                    <h3>Estambul</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>10 días/9 noches</p>
+                    <p>desde <span class="precio">$992.098</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="ciudades" src="../assets/img/Tokio.jfif" alt="Imagen de Tokio">
+                    <h3>Tokio</h3>
+                    <p>VUELO + HOTEL</p>
+                    <p>8 días/7 noches</p>
+                    <p>desde <span class="precio">$1.315.360</span></p>
+                    <button class="reser2" onclick="reservarDestino()" type="button">RESERVAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">  
+            <div class="footer-menu">    
+                <a href="templates/contacto.html">Contáctenos</a>
+            </div>
+
+            <div class="footer-menu">
+                <a  href="">Promociones</a>
+            </div>
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="static/instagram.png" alt="Visita nuestro instagram" style="width:90px;">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="" target="_blank">
+                    <img src="static/facebook.png" alt="Visita nuestro facebook" style="width:50px">
+                </a>
+            </div>
+        </div>
+        <p class="text-center">COPYRIGHT TODOS LOS DERECHOS RESERVADOS.</p>
+
+    </footer>
+
+</body>
+
+</html>
