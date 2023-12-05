@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <title>Europa</title>
+    <title>Asia</title>
     <link rel="icon" href="static/viajar.ico">
-    <script src="static/sctipt.js"></script>
 </head>
 
 <body>        <!--esto es un comentario-->   
@@ -23,9 +22,9 @@
         </div>
     
         <nav class="nav-container"><!--VA A VER QUE CREAR CADA PAGINA PARA CADA DESTNO-->
-            <a class="item-nav" href="../index.html">Inicio</a>
-            <a class="item-nav" href="templates/asia.html">Asia</a>
-            <a class="item-nav" href="templates/oceania.html">Oceania</a>            
+            <a class="item-nav" href="{{ url_for('index') }}">Inicio</a>
+            <a class="item-nav" href="{{ url_for('asia') }}">Asia</a>
+            <a class="item-nav" href="{{ url_for('oceania') }}">Oceania</a>            
             <a class="item-nav" href="#tickets">Comprar Tickets</a><!--NO HAY QUE CREAR UNA PAGINA PARA TICKETS, POR EL MOMENTO-->
         </nav>
     </header>
@@ -42,7 +41,7 @@
         <section>
             <div class="padre">
                 <div class="card">
-                    <img class="paises" src="../assets/img/muralla-china-907249.jpg" alt="Imagen de Muralla China">
+                    <img class="paises" src="static/muralla-china-907249.jpg" alt="Imagen de Muralla China">
                     <h3 class="lugar">China</h3>
                     <p class="estadia">13 días/12 noches</p>
                     <p class="oferta">desde <span class="precio">$1.358.395</span></p>
@@ -50,7 +49,7 @@
                 </div>
         
                 <div class="card">
-                    <img class="paises" src="../assets/img/Monumento.jpg" alt="Imagen de Indonesia">
+                    <img class="paises" src="static/Monumento.jpg" alt="Imagen de Indonesia">
                     <h3 class="lugar">Indonesia</h3>
                     <p class="estadia">6 días/5 noches</p>
                     <p class="oferta">desde <span class="precio">$594.902</span></p>
@@ -58,7 +57,7 @@
                 </div>
         
                 <div class="card">
-                    <img class="paises" src="../assets/img/Rusia.jpg" alt="Imagen de Rusia">
+                    <img class="paises" src="static/Rusia.jpg" alt="Imagen de Rusia">
                     <h3 class="lugar">Rusia</h3>
                     <p class="estadia">6 días/5 noches</p>
                     <p class="oferta">desde <span class="precio">$673.960</span></p>
@@ -66,7 +65,7 @@
                 </div>
         
                 <div class="card">
-                    <img class="paises" src="../assets/img/playas-tailandia.jpg" alt="Imagen de Tailandia">
+                    <img class="paises" src="static/playas-tailandia.jpg" alt="Imagen de Tailandia">
                     <h3 class="lugar">Tailandia</h3>
                     <p class="estadia">11 días/10 noches</p>
                     <p class="oferta">desde <span class="precio">$1.128.432</span></p>
@@ -74,7 +73,7 @@
                 </div>
 
                 <div class="card">
-                    <img class="paises" src="../assets/img/qatar.jfif" alt="Imagen de Qatar">
+                    <img class="paises" src="static/qatar.jfif" alt="Imagen de Qatar">
                     <h3 class="lugar">Qatar</h3>
                     <p class="estadia">6 días/5 noches</p>
                     <p class="oferta">desde <span class="precio">$1.276.480</span></p>
@@ -82,7 +81,7 @@
                 </div>
 
                 <div class="card">
-                    <img class="paises" src="../assets/img/EmiratosArabes.jpg" alt="Imagen de Emiratos Arabes">
+                    <img class="paises" src="static/EmiratosArabes.jpg" alt="Imagen de Emiratos Arabes">
                     <h3 class="lugar">Emiratos Arabes</h3>
                     <p class="estadia">7 días/6 noches</p>
                     <p class="oferta">desde <span class="precio">$1.410.390</span></p>
@@ -95,13 +94,13 @@
             <h2>Super Ofertas por tiempo limitado</h2>
         </div>
         <div id="watch">
-            <script src="../Js/script.js"></script>
+            
         </div>
         
         <section>
             <div class="padre">
                 <div class="tarjeta">
-                    <img class="ciudades" src="../assets/img/LagoBaikal.jpg" alt="Imagen del Lago Baikal">
+                    <img class="ciudades" src="static/LagoBaikal.jpg" alt="Imagen del Lago Baikal">
                     <h3>Lago Baikal</h3>
                     <p>VUELO + HOTEL</p>
                     <p>6 días/5 noches</p>
@@ -110,7 +109,7 @@
                 </div>
         
                 <div class="tarjeta">
-                    <img class="ciudades" src="../assets/img/La India.jpg" alt="Imagen de India">
+                    <img class="ciudades" src="static/La India.jpg" alt="Imagen de India">
                     <h3>Taj Mahal</h3>
                     <p>VUELO + HOTEL</p>
                     <p>6 días/5 noches</p>
@@ -119,7 +118,7 @@
                 </div>
         
                 <div class="tarjeta">
-                    <img class="ciudades" src="../assets/img/GLOBOS bagan.jpg" alt="Bagan. Myanmar">
+                    <img class="ciudades" src="static/GLOBOS bagan.jpg" alt="Bagan. Myanmar">
                     <h3>Bagan</h3>
                     <p>VUELO + HOTEL</p>
                     <p>6 días/5 noches</p>
@@ -128,7 +127,7 @@
                 </div>
         
                 <div class="tarjeta">
-                    <img class="ciudades" src="../assets/img/VIETNAM bahia-halong .jpg" alt="Imagen de Bahía de Halong. Vietnam">
+                    <img class="ciudades" src="static/VIETNAM bahia-halong .jpg" alt="Imagen de Bahía de Halong. Vietnam">
                     <h3>Bahia Halong</h3>
                     <p>VUELO + HOTEL</p>
                     <p>10 días/9 noches</p>
@@ -137,7 +136,7 @@
                 </div>
 
                 <div class="tarjeta">
-                    <img class="ciudades" src="../assets/img/Estambul.jpg" alt="Imagen de Estambul">
+                    <img class="ciudades" src="static/Estambul.jpg" alt="Imagen de Estambul">
                     <h3>Estambul</h3>
                     <p>VUELO + HOTEL</p>
                     <p>10 días/9 noches</p>
@@ -146,7 +145,7 @@
                 </div>
 
                 <div class="tarjeta">
-                    <img class="ciudades" src="../assets/img/Tokio.jfif" alt="Imagen de Tokio">
+                    <img class="ciudades" src="static/Tokio.jfif" alt="Imagen de Tokio">
                     <h3>Tokio</h3>
                     <p>VUELO + HOTEL</p>
                     <p>8 días/7 noches</p>
@@ -181,7 +180,7 @@
         <p class="text-center">COPYRIGHT TODOS LOS DERECHOS RESERVADOS.</p>
 
     </footer>
-
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>

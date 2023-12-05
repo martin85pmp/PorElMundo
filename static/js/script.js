@@ -88,7 +88,7 @@ document.querySelector("#botonReservar").addEventListener("click", reservarDesti
 function reservarDestino() {
     var x=document.getElementById("espacioReserva")
     x.innerHTML=`<div id="reserva">
-        <form action="/store" method="post" id="registro" action="">
+        <form action="/store" method="POST" id="registro">
             <legend>Datos personales</legend>
             <br>
             <label for="firstname">Nombres:

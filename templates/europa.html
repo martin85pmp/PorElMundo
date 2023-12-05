@@ -18,15 +18,15 @@
 <body>        <!--esto es un comentario-->   
     <header>
         <div class="logo">
-            <a href="templates/index.html"><img src="static/logo.png" alt="Logo de la compania"></a>
+            <a href="{{ url_for('index') }}"><img src="static/logo.png" alt="Logo de la compania"></a>
             
             <h2>Por el Mundo</h2>
         </div>
     
         <nav class="nav-container"><!--VA A VER QUE CREAR CADA PAGINA PARA CADA DESTNO-->
-            <a class="item-nav" href="index.html">Inicio</a>
-            <a class="item-nav" href="asia.html">Asia</a>
-            <a class="item-nav" href="oceania.html">Oceania</a>            
+            <a class="item-nav" href="{{ url_for('index') }}">Inicio</a>
+            <a class="item-nav" href="{{ url_for('asia') }}">Asia</a>
+            <a class="item-nav" href="{{ url_for('oceania') }}">Oceania</a>            
             <a class="item-nav" href="#tickets">Comprar Tickets</a><!--NO HAY QUE CREAR UNA PAGINA PARA TICKETS, POR EL MOMENTO-->
         </nav>
     </header>
@@ -160,7 +160,7 @@
     <footer class="site-footer">
         <div class="grid-footer contenedor">  
             <div class="footer-menu">    
-                <a href="templates/contacto.html">Contáctenos</a>
+                <a href="{{ url_for('contacto') }}">Contáctenos</a>
             </div>
 
             <div class="footer-menu">

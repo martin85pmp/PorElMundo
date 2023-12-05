@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Europa</title>
     <link rel="icon" href="static/viajar.ico">
-    <script src="static/sctipt.js"></script>
 </head>
 
 <body>        <!--esto es un comentario-->   
@@ -34,57 +33,58 @@
             <div class="container">
                 <h1>Reserva</h1>
                 <p>Estos son los datos de su reserva. Por favor, verifíquelos bien. Si desea, puede editarlos o eliminar la reserva.</p>
-                <table class="table table-light">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>#</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Correo</th>
-                            <th>Teléfono</th>
-                            <th>Género</th>
-                            <th>Ciudad de destino</th>
-                            <th>Cantidad de noches</th>
-                            <th>Fecha de viaje</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for reserva in reservas %}
-                        <tr>
-                            <td>{{reserva[0]}}</td>
-                            <td>{{reserva[1]}}</td>
-                            <td>{{reserva[2]}}</td>
-                            <td>{{reserva[3]}}</td>
-                            <td>{{reserva[4]}}</td>
-                            <td>{{reserva[5]}}</td>
-                            <td>{{reserva[6]}}</td>
-                            <td>{{reserva[7]}}</td>
-                            <td>{{reserva[8]}}</td>
-                            <td>{{reserva[9]}}</td>
+                
+                <form action="/reserva" method="POST" id="confirmarReserva" enctype="multipart/form-data">
+                    
+                    <input hidden type="text" name="id" value="{{reserva[0]}}">
+                    <label for="firstname">Nombres:<input type="text" size="24" name="firstname" value="{{reserva[1]}}"></label>
+                    <label for="lastname">&nbsp;&nbsp;&nbsp;Apellido:
+                        <input type="text" size="20" name="lastname"  value="{{reserva[2]}}">
+                    </label>                                           
+                    <label for="city">Destino:
+                        <input type="text" size="32" name="city" value="{{reserva[5]}}">
+                    </label>
+                    <label for="night">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noches:
+                        <input type="number" size="10" name="night" value="{{reserva[6]}}">
+                    </label>
+                    <label for="email">Correo electrónico:
+                        <input type="email" name="email" id="email" size="24" value="{{reserva[3]}}">
+                    </label>
+                    <label for="phone">&nbsp;&nbsp;&nbsp;Teléfono:
+                        <input type="tel" size="15" name="phone" id="phone" maxlength="13" value="{{reserva[4]}}">
+                    </label>
+                    <label for="date">Fecha de viaje:
+                        <input type="date" name="date" id="date" value="{{reserva[7]}}">
+                    </label>    
+                    <label for="gender">&nbsp;&nbsp;&nbsp;Género:
+                        <select name="gender" id="gender">
 
-                            <td>
-                                <a class="btn btn-warning" href="/edit/{{reserva[0]}}">Editar</a> |
-                                <a class="btn btn-danger" onclick="return confirm('¿Desea borrar la reserva?')" href="/destroy/{{reserva[0]}}">Eliminar</a>
-                            </td>
-                                
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-               
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            <option>Otro</option>
+        
+                        </select>
+                    </label>
+                    <label for="price">Precio total:
+                        <input name="price" id="price" type="number" value="{{reserva[9]}}">
+                    </label>
+                    <a class="btn btn-warning" href="/update/{{reserva[0]}}">Actualizar datos</a> |
+                    <a class="btn btn-danger" onclick="return confirm('¿Desea borrar la reserva?')" href="/destroy/{{reserva[0]}}">Eliminar</a>                      
+                    <a class="btn" onclick="return alert('Su reserva ha sido confirmada')" href="{{url_for('index')}}">CONFIRMAR RESERVA</a>
+                </form>
+                
                 
                 
             </div>
     
      
         </main>
-    <script src="/Js/script.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
     <footer class="site-footer">
         <div class="grid-footer contenedor">  
             <div class="footer-menu">    
-                <a href="templates/contacto.html">Contáctenos</a>
+                <a href="{{ url_for('contacto') }}">Contáctenos</a>
             </div>
 
             <div class="footer-menu">

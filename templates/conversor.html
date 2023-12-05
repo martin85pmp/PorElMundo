@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="static/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Por el Mundo</title>
-    <link rel="icon" href="/assets/img/viajar.ico">
+    <link rel="icon" href="static/viajar.ico">
 </head>
 
 <body>  
 
 
     <div class="currency-converter">
-        <img src="../assets/img/conversor.png" alt="" class="conversor-imagen">
+        <img src="static/conversor.png" alt="" class="conversor-imagen">
         <h1>Conversor de moneda</h1>
         <p>Elige la moneda y la cantidad para realizar la conversión</p>
         
@@ -165,7 +165,7 @@
     </div>
 
     
-    <script src="../Js/script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
